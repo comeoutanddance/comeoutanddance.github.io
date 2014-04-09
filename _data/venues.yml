@@ -42,7 +42,7 @@
     day: Saturday
     recurrence: [ 1 ]
     start: "18:00"
-    end: "0:00"
+    end: "00:00"
 
 - name: Lakeside Swing
   address: 
@@ -66,3 +66,46 @@
     recurrence: [ 4 , 5 ]
     start: "18:00"
     end: "22:30"
+
+- name: WnY Warehouse
+  address: 
+    street: 64 Digital Drive
+    city: Novato
+    state: CA
+    zip: 94949
+  styles: 
+    primary: [ West Coast Swing ]
+  lessons: [ Beginning , Intermediate ]
+  social: true
+  links:
+    url: http://www.wnywarehouse.com/
+    facebook: https://www.facebook.com/groups/64119550422/
+    # twitter: false
+  staff: [ Yenni Setiawan , Warren Pino ]
+  when:
+    day: Tuesday
+    recurrence: weekly
+    start: "18:45"
+    end: "23:30"
+
+- name: Just Knock WCS
+  address: 
+    name: Dance Loft
+    street: "2475 3rd St Suite #311"
+    city: San Francisco
+    state: CA
+    zip: 94107
+  styles: 
+    primary: [ West Coast Swing ]
+  lessons: [ Beginning , Intermediate ]
+  social: true
+  links:
+    url: http://melissarutz.com/justknockwcs.php
+    facebook: https://www.facebook.com/groups/thedanceloft/
+    # twitter: false
+  staff: [ Melissa Rutz ]
+  when:
+    day: Monday
+    recurrence: [ 4 ]
+    start: "19:00"
+    end: "00:00"
