@@ -24,6 +24,13 @@
 		Every {{ all_ordinal }} {{ include.when.day }}
 	{% endif %}
 	from 
-	{{ include.when.start | date: site.formats.time }}&ndash;{{ include.when.end | date: site.formats.time }}
+	
+	{% if include.when.end == "00:00" %}
+		{% assign end_time = "midnight" %}
+	{% else %}
+		{% assign end_time = include.when.end | date: site.formats.time %}
+	{% endif %}
+	
+	{{ include.when.start | date: site.formats.time }}&ndash;{{ end_time }}
 	</p>
 {% endif %}
