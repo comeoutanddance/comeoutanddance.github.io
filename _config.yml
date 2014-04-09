@@ -2,8 +2,11 @@ name: Come Out and Dance
 markdown: redcarpet
 pygments: false
 exclude: [ Gemfile , Gemfile.lock ]
+permalink: "/news/:year/:month/:day/:title/"
+
 meta:
   desc: "Come Out and Dance is an online calendar of weekly and monthly social dance venues. Swing, Ballroom, Latin, Folk, Line, and other social dances are listed."
 
 formats:
   time: "%l:%M%P"
+  long_date: "%B %-d, %Y"

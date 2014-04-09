@@ -15,12 +15,13 @@
 <body>
 
 	<header role="banner">
-		<h1><a href="/">{{ site.name }}</a></h1>
+		<h1><a href="/">{{ site.name }}</a> <span class="pre">(Beta)</span></h1>
 	</header>
 	
 	<nav role="navigation">
 		<ul class="inline-list">
 			<li><a href="/"{% if page.url == "/index.html" %} class="current"{% endif %}>Home</a></li>
+			<!-- <li><a href="/news/"{% if page.url contains "/news/" %} class="current"{% endif %}>News</a></li> -->
 			<li><a href="/about/"{% if page.url contains "/about/" %} class="current"{% endif %}>About</a></li>
 			<!-- <li><a href="/add-venue/">Add a Venue</a></li> -->
 		</ul>
