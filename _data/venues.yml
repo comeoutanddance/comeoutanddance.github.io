@@ -1,0 +1,68 @@
+- name: Mission City Swing
+  address:
+    name: Polish Club
+    street: 3040 22nd St
+    city: San Francisco
+    state: CA
+    zip: 94110
+    note: "22nd & Shotwell"
+  styles: 
+    primary: [ West Coast Swing ]
+  lessons: [ Beginning , Intermediate ]
+  social: true
+  links:
+    url: http://missioncityswing.com
+    facebook: https://www.facebook.com/missioncityswing
+    # twitter: false
+  staff: [ Eric Jacobson , Rachel Ernst , Rachel Matsuoka ]
+  when:
+    day: Wednesday
+    recurrence: weekly
+    start: "17:00"
+    end: "23:30"
+
+- name: Next Gen Monthly Dance
+  address: 
+    name: Allegro Ballroom
+    street: 5855 Christie Ave
+    city: Emeryville
+    state: CA
+    zip: 94608
+  styles: 
+    primary: [ West Coast Swing ]
+    secondary: [ Nightclub 2-Step , Country 2-Step ]
+  lessons: [ Beginning , Intermediate ]
+  social: true
+  links:
+    url: http://www.nextgenswingdance.com/Default.aspx?pageId=671013
+    facebook: https://www.facebook.com/pages/The-Next-Generation-Swing-Dance-Club/173041202734341
+    # twitter: false
+  staff: [ The Next Generation Swing Dance Club ]
+  when:
+    day: Saturday
+    recurrence: [ 1 ]
+    start: "18:00"
+    end: "0:00"
+
+- name: Lakeside Swing
+  address: 
+    name: "Veterans Hall, Lake Merrit"
+    street: 200 Grand Ave
+    city: Oakland
+    state: CA
+    zip: 94610
+  styles: 
+    primary: [ West Coast Swing ]
+    secondary: [ Street Hustle , Nightclub 2-Step ]
+  lessons: [ Beginning , Intermediate ]
+  social: true
+  links:
+    url: http://audiopyle.com/lakeside.html
+    facebook: https://www.facebook.com/pages/Lakeside-Swing/189739664401135
+    # twitter: false
+  staff: [ Mike Pyle ]
+  when:
+    day: Sunday
+    recurrence: [ 4 , 5 ]
+    start: "18:00"
+    end: "22:30"

@@ -1,0 +1,15 @@
+<article class="entry">
+	<h1>{{ include.venue.name }}</h1>
+	
+	{% include venue-when.html when=include.venue.when %}
+	
+	{% include venue-address.html address=include.venue.address %}
+	
+	{% include venue-styles.html styles=include.venue.styles %}
+
+	{% include venue-offerings.html venue=include.venue %}
+
+	{% include venue-staff.html staff=include.venue.staff %}
+
+	{% include venue-links.html links=include.venue.links %}
+</article>

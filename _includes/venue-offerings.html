@@ -1,0 +1,22 @@
+{% if include.venue.lessons and include.venue.social %}
+	{% assign offer_both = true %}
+{% else %}
+	{% assign offer_both = false %}
+{% endif %}
+
+<p>
+	{% if include.venue.lessons %}
+		<span>{{ include.venue.lessons | array_to_sentence_string }} lessons</span>
+	{% endif %}
+	
+	{% if offer_both %}
+		and
+	{% endif %}
+
+	{% if include.venue.social %}
+		<span>social dancing</span>
+	{% endif %}
+	
+	offered.
+</p>
+

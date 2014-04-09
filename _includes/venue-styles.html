@@ -1,0 +1,5 @@
+<p class="dance-styles">
+	<span class="primary">{{ include.styles.primary | array_to_sentence_string }}</span>
+	{% if include.styles.secondary %} <span class="secondary">(also {{ include.styles.secondary | array_to_sentence_string }})</span>{% endif %}
+	dancing
+</p>

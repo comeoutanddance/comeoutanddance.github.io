@@ -1,0 +1,29 @@
+{% if include.when.recurrence %}
+	<p>
+	{% if include.when.recurrence == "weekly" %}
+		Every {{ include.when.day }}
+	{% else %}
+		{% assign all_ordinal = "" %}
+		{% for number in include.when.recurrence %}
+			{% case number %}
+				{% when 1 %}
+					{% assign ordinal = "1st" %}
+				{% when 2 %}
+					{% assign ordinal = "2nd" %}
+				{% when 3 %}
+					{% assign ordinal = "3rd" %}
+				{% else %}
+					{% assign ordinal = number | append: "th" %}
+			{% endcase %}
+
+			{% assign all_ordinal = all_ordinal | append: ordinal %}
+			{% unless forloop.last %}
+				{% assign all_ordinal = all_ordinal | append: " and " %}
+			{% endunless %}
+		{% endfor %}
+		Every {{ all_ordinal }} {{ include.when.day }}
+	{% endif %}
+	from 
+	{{ include.when.start | date: site.formats.time }}&ndash;{{ include.when.end | date: site.formats.time }}
+	</p>
+{% endif %}

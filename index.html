@@ -1,0 +1,8 @@
+---
+layout: default
+title: Home
+---
+
+{% for venue in site.data.venues %}
+{% include venue.html venue=venue %}
+{% endfor %}

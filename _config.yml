@@ -1,0 +1,8 @@
+name: Come Out and Dance
+markdown: redcarpet
+pygments: false
+meta:
+  desc: "Come Out and Dance is an online calendar of weekly and monthly social dance venues. Swing, Ballroom, Latin, Folk, Line, and other social dances are listed."
+
+formats:
+  time: "%l:%M%P"

@@ -1,0 +1,6 @@
+{% assign address = include.address %}
+<p class="adr">
+<span class="title">{% if address.name %}{{ address.name }}{% endif %}</span><br>
+<span class="street-address">{{ address.street }}</span>{% if address.note %} <span class="street-note">({{ address.note }})</span>{% endif %}<br>
+<span class="locality">{{ address.city }}</span>, <span class="region">{{ address.state }}</span> <span class="postal-code">{{ address.zip }}</span>
+</p>
